@@ -1,0 +1,1669 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+
+# Make data base, printed on Wed Oct 26 03:34:27 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile (from `/Users/fjulien/theos/makefiles/package/deb.mk', line 26)
+THEOS_PACKAGE_ARCH := iphoneos-arm
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 19)
+THEOS_PROJECT_DIR := /Users/fjulien/trollstorejitenabler
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 36)
+PRINT_FORMAT_RED = $(PRINT_FORMAT_STAGE) 1
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 234)
+THEOS_OBJ_DIR = $(_THEOS_LOCAL_DATA_DIR)/$(THEOS_OBJ_DIR_NAME)
+# makefile (from `Makefile', line 16)
+TrollStoreJitEnabler_FILES = $(INTERNAL_FILES) $(EXTERNAL_FILES)
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 36)
+__simplify = $(2)$(eval $(1):=$(2))
+# makefile (from `/Users/fjulien/theos/makefiles/package/deb.mk', line 4)
+_THEOS_PLATFORM_DPKG_DEB = dm.pl
+ 
+# makefile (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 188)
+_THEOS_TOP_INVOCATION_DONE = 1
+# makefile (from `Makefile', line 2)
+TARGET := iphone:clang:latest:8.0
+# makefile (from `/Users/fjulien/theos/makefiles/targets/Darwin/iphone.mk', line 2)
+_THEOS_TARGET_LOADED := 1
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 130)
+_THEOS_OS = $(if $(uname_o),$(uname_o),$(uname_s))
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from `/Users/fjulien/theos/makefiles/platform/Darwin.mk', line 33)
+_THEOS_PLATFORM_MD5SUM := md5
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 85)
+_SDKVERSION := latest
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 57)
+__invocation = $(shell xcrun -sdk $(_THEOS_TARGET_PLATFORM_NAME) -f $(1) 2>/dev/null)
+# makefile (from `/Users/fjulien/theos/makefiles/package.mk', line 91)
+_THEOS_INSTALL_TYPE := remote
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 42)
+PRINT_FORMAT_WARNING = printf "\e[0;33m==> \e[1;33mWarning:\e[m %s\n"
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 3)
+ECHO_PIPEFAIL := set -o pipefail;
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/fjulien/trollstorejitenabler
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 78)
+ECHO_DEBUG_SYMBOLS = $(ECHO_BEGIN)$(PRINT_FORMAT_BLUE) "Generating debug symbols for $(THEOS_CURRENT_INSTANCE)"$(ECHO_END); $(ECHO_PIPEFAIL) (
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 15)
+SHELL = bash
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 43)
+TARGET_CODESIGN_FLAGS = -S
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 31)
+__theos_bool = $(if $(filter Y y YES yes TRUE true 1,$(1)),$(_THEOS_TRUE),$(_THEOS_FALSE))
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 4)
+TARGET_AR_EXT := .a
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# makefile (from `/Users/fjulien/theos/makefiles/legacy.mk', line 40)
+FW_INSTANCE = $(THEOS_CURRENT_INSTANCE)$(warning FW_INSTANCE is deprecated. Please migrate to THEOS_CURRENT_INSTANCE.)
+# environment
+_ = /usr/bin/make
+# makefile (from `/Users/fjulien/theos/makefiles/platform/Darwin.mk', line 39)
+_THEOS_PLATFORM_SHOW_IN_FILE_MANAGER := open -R
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/iphone.mk', line 16)
+_TARGET_VERSION_GE_12_0 := 1
+# makefile (from `/Users/fjulien/theos/makefiles/package/deb.mk', line 12)
+_THEOS_DEB_PACKAGE_CONTROL_PATH := /Users/fjulien/trollstorejitenabler/control
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 86)
+_THEOS_ON_SCHEMA := DEFAULT 
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_tail.mk', line 62)
+_THEOS_TARGET_BUNDLE_RESOURCE_SUBDIRECTORY := 
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 105)
+__schema_all_var_names = $(foreach sch,$(THEOS_SCHEMA),$(subst DEFAULT.,,$(sch).)$(1)$(2))
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 246)
+THEOS_LEGACY_PACKAGE_DIR = $(THEOS_BUILD_DIR)/debs
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 67)
+TARGET_LIPO = $(call __invocation,lipo)
+# makefile (from `Makefile', line 18)
+TrollStoreJitEnabler_FRAMEWORKS = Security UIKit Foundation
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 81)
+ECHO_COPYING_PUBLIC_HEADERS = $(ECHO_BEGIN)$(PRINT_FORMAT_MAGENTA) "Copying public headers into the $(_THEOS_CURRENT_TYPE) wrapper"$(ECHO_END); $(ECHO_PIPEFAIL) (
+# makefile (from `/Users/fjulien/theos/makefiles/vercmp.mk', line 34)
+__vercmp = $(strip $(eval VERCMP_FIRST := $(subst .,$(space),$(1))) $(eval VERCMP_OP := $(if $(filter ge,$(2)),eq gt,$(if $(filter le,$(2)),eq lt,$(2)))) $(eval VERCMP_SECOND := $(subst .,$(space),$(3))) $(eval VERCMP_RES := eq) $(call ___vercmp_expand,VERCMP_FIRST,$(VERCMP_FIRST),$(VERCMP_SECOND)) $(call ___vercmp_expand,VERCMP_SECOND,$(VERCMP_SECOND),$(VERCMP_FIRST)) $(if $(filter $(VERCMP_OP),$(call ___vercmp_presplit,VERCMP_FIRST,VERCMP_SECOND,VERCMP_RES)),1,) )
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 129)
+_THEOS_PLATFORM = $(uname_s)
+# makefile (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 1)
+MAKEFILE_LIST :=  Makefile /Users/fjulien/theos/makefiles/common.mk /Users/fjulien/theos/makefiles/vercmp.mk /Users/fjulien/theos/makefiles/target.mk /Users/fjulien/theos/makefiles/legacy.mk /Users/fjulien/theos/makefiles/platform/Darwin.mk /Users/fjulien/theos/makefiles/platform/Darwin.mk /Users/fjulien/theos/makefiles/targets/Darwin/iphone.mk /Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk /Users/fjulien/theos/makefiles/targets/_common/iphone.mk /Users/fjulien/theos/makefiles/targets/_common/darwin_tail.mk /Users/fjulien/theos/makefiles/targets/Darwin/iphone.mk /Users/fjulien/theos/makefiles/messages.mk /Users/fjulien/theos/makefiles/stage.mk /Users/fjulien/theos/makefiles/package.mk /Users/fjulien/theos/makefiles/package/deb.mk /Users/fjulien/theos/makefiles/install/deb_remote.mk /Users/fjulien/theos/makefiles/library.mk /Users/fjulien/theos/makefiles/master/library.mk /Users/fjulien/theos/makefiles/rules.mk /Users/fjulien/theos/makefiles/master/rules.mk
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 11)
+_THEOS_TARGET_CC := clang
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_tail.mk', line 63)
+_THEOS_TARGET_BUNDLE_BINARY_SUBDIRECTORY := 
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 72)
+ECHO_LINKING_WITH_STRIP = $(ECHO_BEGIN)$(PRINT_FORMAT_YELLOW) "Linking $(_THEOS_CURRENT_TYPE) $(THEOS_CURRENT_INSTANCE) (with strip)"$(ECHO_END); $(ECHO_PIPEFAIL) (
+# makefile (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 17)
+THEOS_USE_PARALLEL_BUILDING := 
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 64)
+THEOS_INCLUDE_PATH := /Users/fjulien/theos/include
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 82)
+ECHO_COPYING_FRAMEWORK = $(ECHO_BEGIN)$(PRINT_FORMAT_MAGENTA) "Installing $(_THEOS_CURRENT_TYPE) to $(THEOS_LIBRARY_PATH)"$(ECHO_END); $(ECHO_PIPEFAIL) (
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_tail.mk', line 39)
+_THEOS_TARGET_SWIFT_LDPATHS = $(call __simplify,_THEOS_TARGET_SWIFT_LDPATHS,$(dir $(shell type -p $(TARGET_SWIFT)))../lib/swift/$(_THEOS_TARGET_PLATFORM_NAME) /usr/lib/swift)
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 66)
+THEOS_FALLBACK_INCLUDE_PATH := /Users/fjulien/theos/include/_fallback
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 35)
+PRINT_FORMAT_STAGE = printf "\e[0;3%im==> \e[1;39m%s…\e[m\n"
+# makefile (from `Makefile', line 4)
+DEBUG = 0
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 89)
+ERROR_END = $(NULLSTRING) >&2; exit 1;
+# `override' directive (from `/Users/fjulien/theos/makefiles/common.mk', line 95)
+_THEOS_CLEANED_SCHEMA_SET := 
+# makefile (from `/Users/fjulien/theos/makefiles/package.mk', line 105)
+_THEOS_SUDO_COMMAND = 
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 62)
+THEOS_LIBRARY_PATH := /Users/fjulien/theos/lib
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 115)
+THEOS_LAYOUT_DIR = $(THEOS_PROJECT_DIR)/$(THEOS_LAYOUT_DIR_NAME)
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_tail.mk', line 35)
+_THEOS_TARGET_CCFLAGS := -stdlib=libc++
+# makefile (from `/Users/fjulien/theos/makefiles/legacy.mk', line 46)
+FW_PACKAGE_DEBVERSION = $(THEOS_PACKAGE_VERSION)$(warning FW_PACKAGE_DEBVERSION is deprecated. Please migrate to THEOS_PACKAGE_VERSION.)
+# makefile (from `/Users/fjulien/theos/makefiles/legacy.mk', line 17)
+FW_STAGING_DIR = $(THEOS_STAGING_DIR)$(warning FW_STAGING_DIR is deprecated. Please migrate to THEOS_STAGING_DIR.)
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 38)
+PRINT_FORMAT_YELLOW = $(PRINT_FORMAT_STAGE) 3
+ 
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_tail.mk', line 46)
+_THEOS_TARGET_SWIFT_VERSION := 5.6.1
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/iphone.mk', line 39)
+_DEPLOY_VERSION_GE_3_0 := 1
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/iphone.mk', line 3)
+_TARGET_VERSION_GE_12_1 = $(call __simplify,_TARGET_VERSION_GE_12_1,$(call __vercmp,$(_THEOS_TARGET_SDK_VERSION),ge,12.1))
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 1)
+NULLSTRING := 
+# makefile (from `/Users/fjulien/theos/makefiles/legacy.mk', line 14)
+FW_PLATFORM_NAME = $(THEOS_PLATFORM_NAME)$(warning FW_PLATFORM_NAME is deprecated. Please migrate to THEOS_PLATFORM_NAME.)
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# makefile (from `Makefile', line 12)
+INTERNAL_FILES = $(wildcard *.m)
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/iphone.mk', line 9)
+_TARGET_VERSION_GE_4_0 = $(call __simplify,_TARGET_VERSION_GE_4_0,$(call __vercmp,$(_THEOS_TARGET_SDK_VERSION),ge,4.0))
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 39)
+__THEOS_COMMON_MK_VERSION := 1k
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 242)
+_THEOS_ESCAPED_STAGING_DIR = $(subst $(_SPACE),\ ,$(THEOS_STAGING_DIR))
+# makefile (from `/Users/fjulien/theos/makefiles/targets/Darwin/iphone.mk', line 6)
+_THEOS_TARGET_PLATFORM_SDK_NAME := iPhoneOS
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 83)
+ECHO_PRE_UNLOADING = $(ECHO_BEGIN)$(PRINT_FORMAT_CYAN) "Unloading $(PREINSTALL_TARGET_PROCESSES)"$(ECHO_END); $(ECHO_PIPEFAIL) (
+# makefile (from `/Users/fjulien/theos/makefiles/stage.mk', line 2)
+_THEOS_STAGING_RULES_LOADED := 1
+# makefile (from `/Users/fjulien/theos/makefiles/package.mk', line 99)
+THEOS_DEVICE_PORT := 
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 65)
+TARGET_LD = $(call __invocation,$(_THEOS_TARGET_CXX))
+# environment
+VSCODE_CWD = /
+# makefile (from `/Users/fjulien/theos/makefiles/targets/Darwin/iphone.mk', line 5)
+_THEOS_TARGET_PLATFORM_NAME := iphoneos
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 273)
+THEOS_PACKAGE_VERSION = $(call __simplify,THEOS_PACKAGE_VERSION,$(THEOS_PACKAGE_BASE_VERSION)$(warning THEOS_PACKAGE_VERSION is deprecated. Please migrate to THEOS_PACKAGE_BASE_VERSION.))
+# makefile (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 10)
+VERCMP_RES := lt
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 261)
+THEOS_RSYNC_EXCLUDES = _MTN .git .svn .DS_Store ._*
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_tail.mk', line 38)
+_THEOS_TARGET_SWIFTFLAGS := -sdk "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk" 
+# makefile (from `/Users/fjulien/theos/makefiles/package/deb.mk', line 27)
+THEOS_PACKAGE_BASE_VERSION := 0.0.1
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 120)
+_THEOS_LOAD_MODULES := 
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 72)
+PATH := /Users/fjulien/theos/bin:/opt/homebrew/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 43)
+PRINT_FORMAT_ERROR = printf "\e[0;31m==> \e[1;31mError:\e[m %s\n"
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 165)
+_THEOS_TARGET_HAS_INCLUDE_PATH := 
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 85)
+ECHO_UNLOADING = $(ECHO_BEGIN)$(PRINT_FORMAT_CYAN) "Unloading $(INSTALL_TARGET_PROCESSES)"$(ECHO_END); $(ECHO_PIPEFAIL) (
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 74)
+TARGET_STRIP_FLAGS = -x
+# makefile (from `/Users/fjulien/theos/makefiles/legacy.mk', line 37)
+FW_SUBPROJECT_PRODUCT = $(THEOS_SUBPROJECT_PRODUCT)$(warning FW_SUBPROJECT_PRODUCT is deprecated. Please migrate to THEOS_SUBPROJECT_PRODUCT.)
+# `override' directive (from `/Users/fjulien/theos/makefiles/package.mk', line 70)
+PACKAGE_VERSION = $(__PACKAGE_VERSION)
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 93)
+_THEOS_OFF_SCHEMA := 
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 46)
+_THEOS_STATIC_MAKEFILE_LIST := Makefile
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 109)
+__schema_var_last = $(strip $($(lastword $(call __schema_defined_var_names,$(1),$(2)))))
+# makefile (from `/Users/fjulien/theos/makefiles/vercmp.mk', line 2)
+space := $(subst ,, )
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 140)
+__THEOS_TARGET_ARG_3 := 8.0
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 166)
+_THEOS_TARGET_HAS_LIBRARY_PATH := 
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/iphone.mk', line 12)
+_TARGET_VERSION_GE_13_0 := 1
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 6)
+TARGET_LDFLAGS_DYNAMICLIB = -dynamiclib -install_name "$(LOCAL_INSTALL_PATH)/$(1)"
+# makefile (from `Makefile', line 1)
+ARCHS = arm64 arm64e
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 9)
+_THEOS_TARGET_SUPPORTS_BUNDLES := 1
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 245)
+THEOS_PACKAGE_DIR = $(THEOS_BUILD_DIR)/$(THEOS_PACKAGE_DIR_NAME)
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 65)
+THEOS_VENDOR_INCLUDE_PATH := /Users/fjulien/theos/vendor/include
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 145)
+_THEOS_TARGET_CALCULATED := 1
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 63)
+TARGET_CC = $(call __invocation,$(_THEOS_TARGET_CC))
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 184)
+_THEOS_SHOULD_STRIP_DEFAULT := 1
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 79)
+ECHO_COPYING_RESOURCE_FILES = $(ECHO_BEGIN)$(PRINT_FORMAT_MAGENTA) "Copying resource files into the $(_THEOS_CURRENT_TYPE) wrapper"$(ECHO_END); $(ECHO_PIPEFAIL) (
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 35)
+TARGET_CODESIGN = ldid
+# makefile (from `/Users/fjulien/theos/makefiles/platform/Darwin.mk', line 7)
+THEOS_PLATFORM_NAME := macosx
+# makefile (from `/Users/fjulien/theos/makefiles/legacy.mk', line 1)
+FRAMEWORKDIR = $(THEOS)
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 63)
+THEOS_VENDOR_LIBRARY_PATH := /Users/fjulien/theos/vendor/lib
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 66)
+TARGET_SWIFT = $(call __invocation,$(_THEOS_TARGET_SWIFT))
+# makefile (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 87)
+_THEOS_ABSOLUTE_BUILD_DIR = .
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 119)
+_THEOS_TARGET_OS_DEPLOYMENT_VERSION = $(or $(__THEOS_TARGET_ARG_$(word 2,$(_THEOS_TARGET_ARG_ORDER))),$(TARGET_OS_DEPLOYMENT_VERSION_$(THEOS_CURRENT_ARCH)),$(TARGET_OS_DEPLOYMENT_VERSION),$(_SDKVERSION),$(_THEOS_TARGET_DEFAULT_OS_DEPLOYMENT_VERSION))
+# makefile (from `/Users/fjulien/theos/makefiles/package/deb.mk', line 15)
+_THEOS_PACKAGE_EXTRA_VERSION_PREFIX := +
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 81)
+_THEOS_FINAL_PACKAGE := 1
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 21)
+_THEOS_RELATIVE_DATA_DIR = .theos
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 23)
+ECHO_NOTHING = @(
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 70)
+TARGET_LIBTOOL = $(call __invocation,libtool)
+# makefile (from `/Users/fjulien/theos/makefiles/package.mk', line 69)
+__PACKAGE_VERSION = $(call __simplify,__PACKAGE_VERSION,)
+ 
+# makefile (from `/Users/fjulien/theos/makefiles/package/deb.mk', line 14)
+_THEOS_PACKAGE_INC_VERSION_PREFIX := -
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 86)
+ECHO_CLEANING = $(ECHO_BEGIN)$(PRINT_FORMAT_CYAN) "Cleaning"$(ECHO_END); $(ECHO_PIPEFAIL) (
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 205)
+_THEOS_INTERNAL_IFLAGS_SWIFT = $(_THEOS_INTERNAL_IFLAGS_BASE)
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 27)
+__clean_pwd = $(shell (unset CDPATH; cd "$(1)"; pwd))
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 78)
+TARGET_DSYMUTIL = $(call __invocation,dsymutil)
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 248)
+THEOS_SUBPROJECT_PRODUCT = subproject.a
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/iphone.mk', line 77)
+__CMP_RES := gt
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 58)
+ECHO_PREPROCESSING = $(ECHO_BEGIN)$(PRINT_FORMAT_RED) "Preprocessing $<"$(ECHO_END); $(ECHO_PIPEFAIL) (
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.ivC3eKWTuS/Listeners
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 12)
+_THEOS_TARGET_CXX := clang++
+# automatic
+%F = $(notdir $%)
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 13)
+_THEOS_TARGET_SWIFT := swift
+# makefile (from `/Users/fjulien/theos/makefiles/vercmp.mk', line 68)
+___vercmp_expand = $(if $(filter $(words $(2)),$(words $(3))),, $(if $(filter $(words $(3)),$(firstword $(sort $(words $(2)) $(words $(3))))),, $(eval $(1) += 0) $(call ___vercmp_expand,$(1),$(value $(1)),$(3)) ) )
+# command line
+COLOR = 1
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 220)
+_THEOS_INTERNAL_SWIFTCOLORFLAGS = -color-diagnostics
+# makefile (from `/Users/fjulien/theos/makefiles/package/deb.mk', line 7)
+THEOS_PLATFORM_DEB_COMPRESSION_LEVEL = 9
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 29)
+TARGET_INSTALL_REMOTE = $(_THEOS_TRUE)
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/iphone.mk', line 13)
+_THEOS_TARGET_USE_CLANG_TARGET_FLAG := 1
+# makefile (from `/Users/fjulien/theos/makefiles/package.mk', line 56)
+_THEOS_PACKAGE_DEFAULT_VERSION_FORMAT = $(THEOS_PACKAGE_BASE_VERSION)$(VERSION.EXTRAVERSION)
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_tail.mk', line 14)
+ISYSROOT := /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk
+# makefile (from `/Users/fjulien/theos/makefiles/platform/Darwin.mk', line 17)
+THEOS_PLATFORM_SDK_ROOT := /Applications/Xcode.app/Contents/Developer
+# makefile (from `/Users/fjulien/theos/makefiles/legacy.mk', line 6)
+FW_MODDIR = $(THEOS_MODULE_PATH)
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 34)
+PRINT_FORMAT_MAKING = printf "\e[1;31m> \e[1;3;39m%s…\e[m\n"
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/iphone.mk', line 60)
+_DEPLOY_VERSION_GE_5_0 := 1
+# makefile (from `/Users/fjulien/theos/makefiles/package/deb.mk', line 56)
+_THEOS_DEB_PACKAGE_FILENAME = $(THEOS_PACKAGE_DIR)/$(THEOS_PACKAGE_NAME)_$(_THEOS_INTERNAL_PACKAGE_VERSION)_$(THEOS_PACKAGE_ARCH).deb
+# makefile (from `/Users/fjulien/theos/makefiles/package/deb.mk', line 13)
+_THEOS_DEB_CAN_PACKAGE := 1
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_tail.mk', line 51)
+_THEOS_TARGET_SWIFT_LDFLAGS = $(call __simplify,_THEOS_TARGET_SWIFT_LDFLAGS,-rpath /usr/lib/swift -rpath /usr/lib/libswift/$(_THEOS_TARGET_SWIFT_VERSION_PATH))
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 70)
+ECHO_LINKING = $(ECHO_BEGIN)$(PRINT_FORMAT_YELLOW) "Linking $(_THEOS_CURRENT_TYPE) $(THEOS_CURRENT_INSTANCE)"$(ECHO_END); $(ECHO_PIPEFAIL) (
+# makefile (from `/Users/fjulien/theos/makefiles/legacy.mk', line 48)
+FW_PACKAGE_STAGING_DIR = $(THEOS_STAGING_DIR)$(warning FW_PACKAGE_STAGING_DIR is deprecated. Please migrate to THEOS_STAGING_DIR.)
+# environment
+PWD = /Users/fjulien/trollstorejitenabler
+# makefile (from `/Users/fjulien/theos/makefiles/package/deb.mk', line 5)
+_THEOS_PLATFORM_DPKG_DEB_COMPRESSION = $(or $(THEOS_PLATFORM_DEB_COMPRESSION_TYPE),lzma)
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 182)
+DEBUG.LDFLAGS = -O0
+# makefile (from `/Users/fjulien/theos/makefiles/platform/Darwin.mk', line 3)
+_THEOS_PLATFORM_HAS_XCODE := 1
+# makefile (from `/Users/fjulien/theos/makefiles/legacy.mk', line 5)
+FW_LIBDIR = $(THEOS_LIBRARY_PATH)
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 41)
+PRINT_FORMAT_CYAN = $(PRINT_FORMAT_STAGE) 6
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_tail.mk', line 49)
+_THEOS_TARGET_SWIFT_VERSION_PATH = stable
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 29)
+_THEOS_TRUE := 1
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 195)
+SWIFT_OPTFLAG = -O -whole-module-optimization
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/iphone.mk', line 74)
+NEUTRAL_ARCH := armv7
+# makefile (from `/Users/fjulien/theos/makefiles/targets/Darwin/iphone.mk', line 7)
+_THEOS_TARGET_PLATFORM_FLAG_NAME := iphoneos
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_tail.mk', line 36)
+_THEOS_TARGET_LDFLAGS := -isysroot "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk" -target -apple-ios8.0  -multiply_defined suppress -stdlib=libc++ -lc++ 
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# makefile (from `/Users/fjulien/theos/makefiles/package.mk', line 41)
+__USERVER_FOR_BUILDNUM := 
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/iphone.mk', line 10)
+_TARGET_VERSION_GE_3_0 = $(call __simplify,_TARGET_VERSION_GE_3_0,$(call __vercmp,$(_THEOS_TARGET_SDK_VERSION),ge,3.0))
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 47)
+_THEOS_PROJECT_MAKEFILE_NAME := Makefile
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 175)
+_THEOS_INTERNAL_LDFLAGS = $(if $(_THEOS_TARGET_HAS_LIBRARY_PATH),-L$(THEOS_TARGET_LIBRARY_PATH) )-L$(THEOS_LIBRARY_PATH) $(DEBUGFLAG) -L$(THEOS_VENDOR_LIBRARY_PATH)
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 181)
+DEBUG.SWIFTFLAGS = -DDEBUG -Onone
+# makefile (from `Makefile', line 5)
+FINAL_PACKAGE = 1
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 240)
+THEOS_STAGING_DIR = $(_THEOS_LOCAL_DATA_DIR)/$(THEOS_STAGING_DIR_NAME)
+# makefile (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 10)
+__CMP_NUM1 := 3 
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/fjulien
+# makefile (from `/Users/fjulien/theos/makefiles/vercmp.mk', line 84)
+___vercmp_expand_backward = $(if $(filter $(words $(2)),$(words $(3))),, $(if $(filter $(words $(3)),$(firstword $(sort $(words $(2)) $(words $(3))))),, $(eval $(1) := 0 $(1)) $(call ___vercmp_expand_backward,$(1),$(value $(1)),$(3)) ) )
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 25)
+ECHO_UNBUFFERED = 
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 259)
+THEOS_CURRENT_INSTANCE := 
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 68)
+TARGET_STRIP = $(call __invocation,strip)
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 52)
+_THEOS_INTERNAL_TRUE_PATH := /Users/fjulien/theos
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 170)
+_THEOS_PACKAGE_LAST_FILENAME = $(call __simplify,_THEOS_PACKAGE_LAST_FILENAME,$(shell cat "$(_THEOS_LOCAL_DATA_DIR)/last_package" 2>/dev/null))
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 275)
+THEOS_LINKAGE_TYPE = dynamic
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/fjulien/Library/Application Support/Code/CachedData/d045a5eda657f4d7b676dedbfa7aab8207f8a075
+# `override' directive (from `/Users/fjulien/theos/makefiles/common.mk', line 94)
+THEOS_SCHEMA := DEFAULT
+ 
+# environment
+LOGNAME = fjulien
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/iphone.mk', line 88)
+_TARGET_VERSION_GE_10_0 := 
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 255)
+_THEOS_MAKEFLAGS := --no-keep-going COLOR=1 --no-print-directory
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 244)
+THEOS_PACKAGE_DIR_NAME = packages
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 94)
+NOTICE_EMPTY_LINKING = @$(PRINT_FORMAT_WARNING) "No files to link - creating a bundle containing only resources"
+# makefile (from `/Users/fjulien/theos/makefiles/targets/Darwin/iphone.mk', line 8)
+_THEOS_TARGET_PLATFORM_SWIFT_NAME := apple-ios
+# makefile (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 10)
+_THEOS_IS_MAKE_GT_4_0 := 
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 51)
+_THEOS_RELATIVE_MAKE_PATH := /Users/fjulien/theos/makefiles/
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_tail.mk', line 61)
+_THEOS_TARGET_BUNDLE_INFO_PLIST_SUBDIRECTORY := 
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 88)
+ERROR_BEGIN = @$(PRINT_FORMAT_ERROR) $(NULLSTRING)
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 76)
+ECHO_MERGING = $(ECHO_BEGIN)$(PRINT_FORMAT_BLUE) "Merging $(_THEOS_CURRENT_TYPE) $(THEOS_CURRENT_INSTANCE)"$(ECHO_END); $(ECHO_PIPEFAIL) (
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 180)
+DEBUG.CFLAGS = -DDEBUG -O0
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 71)
+ECHO_STATIC_LINKING = $(ECHO_BEGIN)$(PRINT_FORMAT_YELLOW) "Linking static $(_THEOS_CURRENT_TYPE) $(THEOS_CURRENT_INSTANCE)"$(ECHO_END); $(ECHO_PIPEFAIL) (
+# makefile (from `/Users/fjulien/theos/makefiles/target.mk', line 21)
+___get_target_args = $(subst ;,$(___newline), $(shell args=('$(subst :,' ',$(1))'); for (( i=0; i<$${#args[@]}; i++ )); do if [[ $${args[$$i]} != '' ]]; then printf 'export __THEOS_TARGET_ARG_%s := %s;' "$$i" "$${args[$$i]}"; fi; done ) )
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 28)
+STDERR_NULL_REDIRECT = 2> /dev/null
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_tail.mk', line 64)
+_THEOS_TARGET_BUNDLE_HEADERS_SUBDIRECTORY := /Headers
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 64)
+TARGET_CXX = $(call __invocation,$(_THEOS_TARGET_CXX))
+# makefile (from `/Users/fjulien/theos/makefiles/package/deb.mk', line 17)
+_THEOS_DEB_HAS_DPKG_DEB := 1
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 202)
+_THEOS_INTERNAL_SWIFTFLAGS = -DTHEOS_SWIFT -DTARGET_$(_THEOS_TARGET_NAME_DEFINE) $(SWIFT_OPTFLAG) -module-name $(THEOS_CURRENT_INSTANCE) $(SWIFT_DEBUGFLAG)
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 16)
+_THEOS_TARGET_ARG_ORDER := 2 3
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# makefile (from `/Users/fjulien/theos/makefiles/package/deb.mk', line 47)
+_THEOS_DEB_LIBSWIFT_DEPENDS := org.swift.libswift (>= 5.0)
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 231)
+THEOS_OBJ_DIR_NAME = obj$(_THEOS_OBJ_DIR_EXTENSION)
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 61)
+THEOS_BIN_PATH := /Users/fjulien/theos/bin
+# environment
+SHLVL = 1
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 93)
+_UNSORTED_SDKS := 10.3 11.4 12.4 13.7 14.5 9.3  11.2 15.5
+# makefile (from `/Users/fjulien/theos/makefiles/platform/Darwin.mk', line 29)
+_THEOS_PLATFORM_DU_EXCLUDE := -I
+# makefile (from `/Users/fjulien/theos/makefiles/master/library.mk', line 1)
+LIBRARY_NAME := TrollStoreJitEnabler
+# makefile (from `Makefile', line 7)
+GO_EASY_ON_ME = 1
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 33)
+PRINT_FORMAT = printf "\e[0;36m==> \e[1;36mNotice:\e[m %s\n"
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 163)
+THEOS_TARGET_INCLUDE_PATH := /Users/fjulien/theos/include/iphone
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/iphone.mk', line 53)
+_TARGET_VERSION_GE_7_0 := 1
+# makefile (from `/Users/fjulien/theos/makefiles/target.mk', line 3)
+define ___newline
+
+
+endef
+# makefile (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 10)
+__CMP_NUM2 := 4 
+# default
+MAKE_VERSION := 3.81
+# makefile (from `/Users/fjulien/theos/makefiles/platform/Darwin.mk', line 2)
+_THEOS_PLATFORM_LOADED := 1
+# environment
+USER = fjulien
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/iphone.mk', line 22)
+_THEOS_TARGET_DEFAULT_OS_DEPLOYMENT_VERSION := 9.0
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 2)
+TARGET_EXE_EXT := 
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from `/Users/fjulien/theos/makefiles/package/deb.mk', line 25)
+THEOS_PACKAGE_NAME := com.rednick16.trollstorejitenabler
+# makefile (from `/Users/fjulien/theos/makefiles/legacy.mk', line 43)
+FW_PACKAGE_NAME = $(THEOS_PACKAGE_NAME)$(warning FW_PACKAGE_NAME is deprecated. Please migrate to THEOS_PACKAGE_NAME.)
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 73)
+ECHO_STRIPPING = $(ECHO_BEGIN)$(PRINT_FORMAT_BLUE) "Stripping $(THEOS_CURRENT_INSTANCE)"$(ECHO_END); $(ECHO_PIPEFAIL) (
+# makefile (from `Makefile', line 11)
+EXTERNAL_FILES = $(wildcard fishhook/*.c)
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 140)
+__THEOS_TARGET_ARG_0 := iphone
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 26)
+ECHO_END = )
+# makefile (from `/Users/fjulien/theos/makefiles/rules.mk', line 2)
+_THEOS_RULES_LOADED := 1
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_tail.mk', line 34)
+_THEOS_TARGET_CFLAGS := -isysroot "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk" -target -apple-ios8.0 
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# makefile (from `/Users/fjulien/theos/makefiles/legacy.mk', line 42)
+FW_SHARED_BUNDLE_RESOURCE_PATH = $(THEOS_SHARED_BUNDLE_RESOURCE_PATH)$(warning FW_SHARED_BUNDLE_RESOURCE_PATH is deprecated. Please migrate to THEOS_SHARED_BUNDLE_RESOURCE_PATH.)
+# makefile (from `/Users/fjulien/theos/makefiles/platform/Darwin.mk', line 43)
+_THEOS_PLATFORM_GET_LOGICAL_CORES := sysctl -n hw.ncpu
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/iphone.mk', line 39)
+_TARGET_VERSION_GE_6_0 := 1
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 131)
+_THEOS_PLATFORM_CALCULATED := 1
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/iphone.mk', line 39)
+_DEPLOY_VERSION_LT_4_3 := 
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 203)
+_THEOS_INTERNAL_IFLAGS_BASE = $(if $(_THEOS_TARGET_HAS_INCLUDE_PATH),-I$(THEOS_TARGET_INCLUDE_PATH) )-I$(THEOS_INCLUDE_PATH) -I$(THEOS_VENDOR_INCLUDE_PATH) -I$(THEOS_FALLBACK_INCLUDE_PATH)
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 84)
+ECHO_INSTALLING = $(ECHO_BEGIN)$(PRINT_FORMAT_CYAN) "Installing"$(ECHO_END); $(ECHO_PIPEFAIL) (
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 30)
+_THEOS_FALSE := 
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 92)
+_XCODE_SDK_DIR := /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs
+# makefile (from `/Users/fjulien/theos/makefiles/legacy.mk', line 3)
+FW_MAKEDIR = $(THEOS_MAKE_PATH)
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/bh/dkbdbbl13d3fds9b2p06twqh0000gn/T/
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 107)
+__schema_var_all = $(strip $(foreach sch,$(call __schema_all_var_names,$(1),$(2)),$($(sch))))
+# automatic
+*F = $(notdir $*)
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 60)
+THEOS_MAKE_PATH := /Users/fjulien/theos/makefiles
+# environment
+ 
+VSCODE_IPC_HOOK = /Users/fjulien/Library/Application Support/Code/1.72.2-main.sock
+# makefile (from `/Users/fjulien/theos/makefiles/legacy.mk', line 2)
+FW_BINDIR = $(THEOS_BIN_PATH)
+# environment
+MallocNanoZone = 0
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 114)
+THEOS_LAYOUT_DIR_NAME = layout
+# makefile (from `/Users/fjulien/theos/makefiles/platform/Darwin.mk', line 42)
+THEOS_SUDO_COMMAND = sudo
+# makefile
+MAKEFLAGS = S --no-print-directory -Rrqp -- $(MAKEOVERRIDES)
+# makefile (from `/Users/fjulien/theos/makefiles/legacy.mk', line 23)
+FW_BUILD_DIR = $(THEOS_BUILD_DIR)$(warning FW_BUILD_DIR is deprecated. Please migrate to THEOS_BUILD_DIR.)
+# environment
+MFLAGS = -S --no-print-directory -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 140)
+__THEOS_TARGET_ARG_1 := clang
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_tail.mk', line 18)
+TARGET_PRIVATE_FRAMEWORK_INCLUDE_PATH = $(ISYSROOT)/System/Library/PrivateFrameworks
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/iphone.mk', line 47)
+_DEPLOY_VERSION_GE_11_0 := 
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 169)
+_THEOS_PACKAGE_FORMAT := deb
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 127)
+uname_o := 
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.28358806.28358812
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 109)
+_LATEST_SDK := 15.5
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/iphone.mk', line 17)
+_TARGET_LIBCPP_CCFLAGS := -stdlib=libc++
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/iphone.mk', line 18)
+_TARGET_LIBCPP_LDFLAGS := -stdlib=libc++ -lc++
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 109)
+_SORTED_SDKS := 9.3 10.3 11.2 11.4 12.4 13.7 14.5 15.5
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 22)
+_THEOS_LOCAL_DATA_DIR := /Users/fjulien/trollstorejitenabler/.theos
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 91)
+WARNING_EMPTY_LINKING = @$(PRINT_FORMAT_WARNING) "No files to link. Please check your Makefile! Make sure you set $(THEOS_CURRENT_INSTANCE)_FILES (or similar variables)"
+# makefile (from `/Users/fjulien/theos/makefiles/package.mk', line 42)
+__BASEVER_FOR_BUILDNUM = $(or $(__USERVER_FOR_BUILDNUM),$(THEOS_PACKAGE_BASE_VERSION))
+# automatic
++F = $(notdir $+)
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 34)
+__executable = $(if $(shell PATH="$(THEOS_BIN_PATH):$$PATH" type "$(1)" > /dev/null 2>&1 && echo 1),$(_THEOS_TRUE),$(_THEOS_FALSE))
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 259)
+_THEOS_CURRENT_TYPE := 
+# makefile (from `/Users/fjulien/theos/makefiles/target.mk', line 39)
+__eval_target = $(eval $(call ___get_target_args,$(3)) $(call ___get_target_args,$(2)) $(call ___get_target_args,$(1)) )
+# makefile (from `/Users/fjulien/theos/makefiles/vercmp.mk', line 52)
+___vercmp_presplit = $(strip $(foreach ver1,$(value $(1)),$(if $(filter eq,$(value $(3))), $(eval $(3):=$(call __cmp,$(ver1),$(firstword $(value $(2)))$(eval $(2):=$(wordlist 2,$(words $(value $(2))),$(value $(2)))))) ,)) $(value $(3)) )
+# makefile (from `/Users/fjulien/theos/makefiles/package.mk', line 99)
+THEOS_DEVICE_IP := 
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 264)
+FAKEROOT := /Users/fjulien/theos/bin/fakeroot.sh -p "/Users/fjulien/trollstorejitenabler/.theos/fakeroot"
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 7)
+TARGET_CFLAGS_DYNAMICLIB = 
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 159)
+_THEOS_TARGET_NAME_DEFINE := IPHONE
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_tail.mk', line 17)
+TARGET_PRIVATE_FRAMEWORK_PATH = $(SYSROOT)/System/Library/PrivateFrameworks
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
+# makefile (from `/Users/fjulien/theos/makefiles/package.mk', line 72)
+_THEOS_INTERNAL_PACKAGE_VERSION = $(call __simplify,_THEOS_INTERNAL_PACKAGE_VERSION,$(or $(__PACKAGE_VERSION),$(_THEOS_PACKAGE_DEFAULT_VERSION_FORMAT),1))
+# environment
+COMMAND_MODE = unix2003
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 164)
+THEOS_TARGET_LIBRARY_PATH := /Users/fjulien/theos/lib/iphone
+# makefile (from `/Users/fjulien/theos/makefiles/legacy.mk', line 4)
+FW_INCDIR = $(THEOS_INCLUDE_PATH)
+# default
+MAKEFILES := 
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 204)
+_THEOS_INTERNAL_IFLAGS_C = $(_THEOS_INTERNAL_IFLAGS_BASE) -include $(THEOS)/Prefix.pch
+# automatic
+<F = $(notdir $<)
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 21)
+_THEOS_TARGET_DEFAULT_PACKAGE_FORMAT = deb
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 72)
+TARGET_XCPRETTY = $(call __invocation,xcpretty)
+# makefile (from `/Users/fjulien/theos/makefiles/platform/Darwin.mk', line 20)
+DEVELOPER_DIR = $(THEOS_PLATFORM_SDK_ROOT)
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 262)
+_THEOS_RSYNC_EXCLUDE_COMMANDLINE := --exclude "_MTN" --exclude ".git" --exclude ".svn" --exclude ".DS_Store" --exclude "._*"
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 267)
+_THEOS_MAKE_PARALLEL_BUILDING = yes
+# makefile (from `/Users/fjulien/theos/makefiles/legacy.mk', line 15)
+FW_TARGET_NAME = $(THEOS_TARGET_NAME)$(warning FW_TARGET_NAME is deprecated. Please migrate to THEOS_TARGET_NAME.)
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 68)
+THEOS_SDKS_PATH := /Users/fjulien/theos/sdks
+# makefile (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 10)
+VERCMP_OP := gt
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 29)
+STDOUT_NULL_REDIRECT = > /dev/null
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 121)
+__mod = -include $$(foreach mod,$$(_THEOS_LOAD_MODULES),$$(THEOS_MODULE_PATH)/$$(mod)/$(1))
+# makefile (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 10)
+VERCMP_SECOND := 0
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_tail.mk', line 11)
+SYSROOT := /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 223)
+THEOS_BUILD_DIR = .
+# makefile (from `/Users/fjulien/theos/makefiles/package.mk', line 98)
+THEOS_DEVICE_USER = root
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 239)
+THEOS_STAGING_DIR_NAME = _
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 5)
+_THEOS_VERBOSE := 
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 71)
+TARGET_XCODEBUILD = $(call __invocation,xcodebuild)
+# makefile (from `/Users/fjulien/theos/makefiles/master/library.mk', line 11)
+LIBRARYS_WITH_SUBPROJECTS = $(strip $(foreach library,$(LIBRARY_NAME),$(patsubst %,$(library),$(call __schema_var_all,$(library)_,SUBPROJECTS))))
+# makefile (from `/Users/fjulien/theos/makefiles/package/deb.mk', line 44)
+_THEOS_DEB_LIBSWIFT_PACKAGE_VERSION := 5.0
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 24)
+ECHO_MAKE = +@
+# environment
+LC_ALL = C
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 33)
+__exists = $(if $(wildcard $(1)),$(_THEOS_TRUE),$(_THEOS_FALSE))
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 117)
+_THEOS_HAS_STAGING_LAYOUT := 
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 80)
+ECHO_COPYING_RESOURCE_DIRS = $(ECHO_BEGIN)$(PRINT_FORMAT_MAGENTA) "Copying resource directories into the $(_THEOS_CURRENT_TYPE) wrapper"$(ECHO_END); $(ECHO_PIPEFAIL) (
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 106)
+__schema_defined_var_names = $(foreach tuple,$(filter-out undefined:%,$(foreach schvar,$(call __schema_all_var_names,$(1),$(2)),$(origin $(schvar)):$(schvar))),$(lastword $(subst :, ,$(tuple))))
+ 
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 178)
+DEBUGFLAG = -ggdb
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/iphone.mk', line 77)
+_TARGET_VERSION_GE_8_4 := 1
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 69)
+TARGET_CODESIGN_ALLOCATE = $(call __invocation,codesign_allocate)
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 23)
+_THEOS_BUILD_SESSION_FILE = $(_THEOS_LOCAL_DATA_DIR)/build_session
+# makefile (from `/Users/fjulien/theos/makefiles/package/deb.mk', line 41)
+_THEOS_DEB_LIBSWIFT_PACKAGE := org.swift.libswift
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 179)
+SWIFT_DEBUGFLAG = -g
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_tail.mk', line 29)
+VERSIONFLAGS := -target -apple-ios8.0
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 141)
+_THEOS_TARGET := iphone
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 40)
+PRINT_FORMAT_MAGENTA = $(PRINT_FORMAT_STAGE) 5
+# makefile (from `/Users/fjulien/theos/makefiles/package.mk', line 55)
+VERSION.EXTRAVERSION = $(if $(PACKAGE_BUILDNAME),+$(PACKAGE_BUILDNAME))
+# makefile (from `/Users/fjulien/theos/makefiles/package.mk', line 2)
+_THEOS_PACKAGE_RULES_LOADED := 1
+# automatic
+^F = $(notdir $^)
+# `override' directive (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 115)
+_THEOS_TARGET_INCLUDE_SDK_VERSION := 15.5
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 37)
+PRINT_FORMAT_GREEN = $(PRINT_FORMAT_STAGE) 2
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 39)
+PRINT_FORMAT_BLUE = $(PRINT_FORMAT_STAGE) 4
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 68)
+ECHO_COMPILING = $(ECHO_BEGIN)$(PRINT_FORMAT_GREEN) "Compiling $<"$(ECHO_END); $(ECHO_PIPEFAIL) (
+# makefile (from `/Users/fjulien/theos/makefiles/legacy.mk', line 44)
+FW_PACKAGE_ARCH = $(THEOS_PACKAGE_ARCH)$(warning FW_PACKAGE_ARCH is deprecated. Please migrate to THEOS_PACKAGE_ARCH.)
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 108)
+__schema_var_name_last = $(strip $(lastword $(call __schema_defined_var_names,$(1),$(2))))
+# default
+SUFFIXES := 
+# makefile (from `/Users/fjulien/theos/makefiles/legacy.mk', line 8)
+FW_PROJECT_DIR = $(THEOS_PROJECT_DIR)
+# makefile (from `/Users/fjulien/theos/makefiles/legacy.mk', line 31)
+FW_OBJ_DIR = $(THEOS_OBJ_DIR)$(warning FW_OBJ_DIR is deprecated. Please migrate to THEOS_OBJ_DIR.)
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 140)
+__THEOS_TARGET_ARG_2 := latest
+# makefile (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 10)
+VERCMP_FIRST := 3 81
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 126)
+uname_s := Darwin
+# makefile (from `Makefile', line 6)
+FOR_RELEASE = 1
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 69)
+ECHO_SWIFTMODULE_HEADER = $(ECHO_BEGIN)$(PRINT_FORMAT_BLUE) "Generating $(notdir $@)"$(ECHO_END); $(ECHO_PIPEFAIL) (
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 191)
+SHOULD_STRIP := 1
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 22)
+ECHO_BEGIN = @(
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 3)
+TARGET_LIB_EXT := .dylib
+# makefile (from `/Users/fjulien/theos/makefiles/package/deb.mk', line 2)
+_THEOS_PACKAGE_FORMAT_LOADED := 1
+# makefile (from `Makefile', line 17)
+TrollStoreJitEnabler_CFLAGS = -fobjc-arc -fvisibility=hidden
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 194)
+OPTFLAG = -Os
+# makefile (from `/Users/fjulien/theos/makefiles/legacy.mk', line 47)
+FW_PACKAGE_FILENAME = $(THEOS_PACKAGE_FILENAME)$(warning FW_PACKAGE_FILENAME is deprecated. Please migrate to THEOS_PACKAGE_FILENAME.)
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 67)
+THEOS_MODULE_PATH := /Users/fjulien/theos/mod
+# makefile (from `/Users/fjulien/theos/makefiles/targets/Darwin/iphone.mk', line 3)
+THEOS_TARGET_NAME := iphone
+# environment
+MAKELEVEL := 0
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/iphone.mk', line 34)
+_DEPLOY_VERSION_GE_9_0 = $(call __simplify,_DEPLOY_VERSION_GE_9_0,$(call __vercmp,$(_THEOS_TARGET_OS_DEPLOYMENT_VERSION),ge,9.0))
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 241)
+_SPACE := $(subst ,, )
+# `override' directive (from `/Users/fjulien/theos/makefiles/common.mk', line 57)
+THEOS := /Users/fjulien/theos
+# `override' directive (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk', line 109)
+_THEOS_TARGET_SDK_VERSION := 15.5
+# makefile (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 1)
+__THEOS_RULES_MK_VERSION := 1k
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 219)
+_THEOS_INTERNAL_COLORFLAGS = -fcolor-diagnostics
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 85)
+_THEOS_SCHEMA := 
+# makefile (from `/Users/fjulien/theos/makefiles/messages.mk', line 77)
+ECHO_SIGNING = $(ECHO_BEGIN)$(PRINT_FORMAT_BLUE) "Signing $(THEOS_CURRENT_INSTANCE)"$(ECHO_END); $(ECHO_PIPEFAIL) (
+# makefile (from `/Users/fjulien/theos/makefiles/vercmp.mk', line 13)
+__cmp = $(if $(filter $(1),$(2)),eq,$(strip $(eval __CMP_NUM1:=$(subst 0,0 ,$(subst 1,1 ,$(subst 2,2 ,$(subst 3,3 ,$(subst 4,4 ,$(subst 5,5 ,$(subst 6,6 ,$(subst 7,7 ,$(subst 8,8 ,$(subst 9,9 ,$(1)))))))))))) $(eval __CMP_NUM2:=$(subst 0,0 ,$(subst 1,1 ,$(subst 2,2 ,$(subst 3,3 ,$(subst 4,4 ,$(subst 5,5 ,$(subst 6,6 ,$(subst 7,7 ,$(subst 8,8 ,$(subst 9,9 ,$(2)))))))))))) $(if $(filter-out 1,$(words $(__CMP_NUM1)))$(filter-out 1,$(words $(__CMP_NUM2))),$(strip $(call ___vercmp_expand_backward,__CMP_NUM1,$(__CMP_NUM1),$(__CMP_NUM2)) $(call ___vercmp_expand_backward,__CMP_NUM2,$(__CMP_NUM2),$(__CMP_NUM1)) $(eval __CMP_RES:=eq) $(call ___vercmp_presplit,__CMP_NUM1,__CMP_NUM2,__CMP_RES) ),$(if $(filter $(1),$(firstword $(sort $(1) $(2)))),lt,gt) ) ))
+# makefile (from `/Users/fjulien/theos/makefiles/package/deb.mk', line 37)
+_TARGET_SWIFT_VERSION_GE_5_0 := 1
+# makefile (from `/Users/fjulien/theos/makefiles/targets/_common/darwin_tail.mk', line 26)
+_THEOS_TARGET_SWIFT_TARGET := apple-ios8.0
+# makefile (from `/Users/fjulien/theos/makefiles/legacy.mk', line 45)
+FW_PACKAGE_VERSION = $(THEOS_PACKAGE_BASE_VERSION)$(warning FW_PACKAGE_VERSION is deprecated. Please migrate to THEOS_PACKAGE_BASE_VERSION.)
+# environment
+LANG = C
+# makefile (from `/Users/fjulien/theos/makefiles/vercmp.mk', line 1)
+empty := 
+# makefile (from `/Users/fjulien/theos/makefiles/platform/Darwin.mk', line 23)
+_THEOS_PLATFORM_DEFAULT_TARGET := iphone
+# makefile (from `/Users/fjulien/theos/makefiles/common.mk', line 201)
+_THEOS_INTERNAL_CFLAGS = -DTARGET_$(_THEOS_TARGET_NAME_DEFINE)=1 $(OPTFLAG) -Wall $(DEBUGFLAG)
+# makefile (from `/Users/fjulien/theos/makefiles/package.mk', line 39)
+VERSION.INC_BUILD_NUMBER := X
+# environment
+VSCODE_PID = 84185
+# makefile (from `Makefile', line 19)
+TrollStoreJitEnabler_INSTALL_PATH = @rpath/Frameworks
+# variable set hash-table stats:
+# Load=377/1024=37%, Rehash=0, Collisions=306/1861=16%
+
+# Pattern-specific Variable Values
+
+%.variables :
+# makefile (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 112)
+# _INSTANCE = $(basename $(basename $*))
+
+%.variables :
+# makefile (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 113)
+ 
+# _OPERATION := $$(subst .,,$$(suffix $$(basename $$*)))
+
+%.variables :
+# makefile (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 114)
+# _TYPE := $$(subst -,_,$$(subst .,,$$(suffix $$*)))
+
+%.variables :
+# makefile (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 115)
+# __SUBPROJECTS := $$(strip $$(call __schema_var_all,$$(_INSTANCE)_,SUBPROJECTS))
+
+%.subprojects :
+# makefile (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 144)
+# _INSTANCE := $$(basename $$(basename $$*))
+
+%.subprojects :
+# makefile (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 145)
+# _OPERATION := $$(subst .,,$$(suffix $$(basename $$*)))
+
+%.subprojects :
+# makefile (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 146)
+# _TYPE := $$(subst -,_,$$(subst .,,$$(suffix $$*)))
+
+%.subprojects :
+# makefile (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 147)
+# __SUBPROJECTS := $$(strip $$(call __schema_var_all,$$(_INSTANCE)_,SUBPROJECTS))
+
+# 8 pattern-specific variable values
+# Directories
+
+# /Users/fjulien/theos/sdks (device 16777232, inode 1426177): 12 files, no impossibilities.
+# . (device 16777232, inode 29709413): 11 files, no impossibilities.
+# /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs (device 16777232, inode 456106): 5 files, no impossibilities.
+# /Users/fjulien/trollstorejitenabler (device 16777232, inode 29709413): 11 files, no impossibilities.
+# /Users/fjulien (device 16777232, inode 247712): 53 files, no impossibilities.
+# /Users/fjulien/theos/vendor/lib (device 16777232, inode 1426186): 22 files, no impossibilities so far.
+# /Users/fjulien/theos/include (device 16777232, inode 1426075): 5 files, no impossibilities.
+# /Users/fjulien/trollstorejitenabler/.theos (device 16777232, inode 29712290): 5 files, no impossibilities so far.
+# /Users/fjulien/theos/vendor/include (device 16777232, inode 1426185): 96 files, no impossibilities so far.
+# /Users/fjulien/theos/lib (device 16777232, inode 1426077): 5 files, no impossibilities.
+
+# 225 files, no impossibilities in 10 directories.
+
+# Implicit Rules
+
+%.variables:
+#  commands to execute (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 117):
+	+@ \
+	abs_build_dir=$(_THEOS_ABSOLUTE_BUILD_DIR); \
+	if [[ "$(__SUBPROJECTS)" != "" ]]; then \
+	$(PRINT_FORMAT_MAKING) "Making $(_OPERATION) in subprojects of $(_TYPE) $(_INSTANCE)"; \
+	for d in $(__SUBPROJECTS); do \
+	d="$${d%:*}"; \
+	if [[ "$${abs_build_dir}" = "." ]]; then \
+	lbuilddir="."; \
+	else \
+	lbuilddir="$${abs_build_dir}/$$d"; \
+	fi; \
+	if $(MAKE) -C $$d -f $(_THEOS_PROJECT_MAKEFILE_NAME) $(_THEOS_MAKEFLAGS) $(_OPERATION) \
+	THEOS_BUILD_DIR="$$lbuilddir" \
+	; then\
+	:; \
+	else exit $$?; \
+	fi; \
+	done; \
+	fi; \
+	$(PRINT_FORMAT_MAKING) "Making $(_OPERATION) for $(_TYPE) $(_INSTANCE)"; \
+	$(MAKE) -f $(_THEOS_PROJECT_MAKEFILE_NAME) $(_THEOS_MAKEFLAGS) \
+	internal-$(_TYPE)-$(_OPERATION) \
+	_THEOS_CURRENT_TYPE="$(_TYPE)" \
+	THEOS_CURRENT_INSTANCE="$(_INSTANCE)" \
+	_THEOS_CURRENT_OPERATION="$(_OPERATION)" \
+	THEOS_BUILD_DIR="$(_THEOS_ABSOLUTE_BUILD_DIR)"
+	
+
+%.subprojects:
+#  commands to execute (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 149):
+	+@ \
+	abs_build_dir=$(_THEOS_ABSOLUTE_BUILD_DIR); \
+	if [[ "$(__SUBPROJECTS)" != "" ]]; then \
+	$(PRINT_FORMAT_MAKING) "Making $(_OPERATION) in subprojects of $(_TYPE) $(_INSTANCE)"; \
+	for d in $(__SUBPROJECTS); do \
+	d="$${d%:*}"; \
+	if [[ "$${abs_build_dir}" = "." ]]; then \
+	lbuilddir="."; \
+	else \
+	lbuilddir="$${abs_build_dir}/$$d"; \
+	fi; \
+	if $(MAKE) -C $$d -f $(_THEOS_PROJECT_MAKEFILE_NAME) $(_THEOS_MAKEFLAGS) $(_OPERATION) \
+	THEOS_BUILD_DIR="$$lbuilddir" \
+	; then\
+	:; \
+	else exit $$?; \
+	fi; \
+	done; \
+	fi
+	
+
+%.mm: %.l.mm
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 17):
+	$(THEOS_BIN_PATH)/logos.pl $(ALL_LOGOSFLAGS) $< > $@
+	
+
+%.mm: %.xmm
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 20):
+	$(THEOS_BIN_PATH)/logos.pl $(ALL_LOGOSFLAGS) $< > $@
+	
+
+%.mm: %.xm
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 23):
+	$(THEOS_BIN_PATH)/logos.pl $(ALL_LOGOSFLAGS) $< > $@
+	
+
+%.m: %.xm
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 26):
+	$(THEOS_BIN_PATH)/logos.pl $(ALL_LOGOSFLAGS) $< > $@
+	
+
+%.swift: %.xswift
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 29):
+	$(THEOS_BIN_PATH)/logos.pl $(ALL_LOGOSFLAGS) $< > $@
+	
+
+/Users/fjulien/trollstorejitenabler/.theos/obj/%/.stamp: /Users/fjulien/trollstorejitenabler/.theos/obj
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 43):
+	@mkdir -p $(dir $@); touch $@
+	
+
+/Users/fjulien/theos/makefiles/%.mk:
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 47):
+	
+
+/Users/fjulien/theos/makefiles/master/%.mk:
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 48):
+	
+
+/Users/fjulien/theos/makefiles/instance/%.mk:
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 49):
+	
+
+/Users/fjulien/theos/makefiles/instance/shared/%.mk:
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 50):
+	
+
+/Users/fjulien/theos/makefiles/platform/%.mk:
+ 
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 51):
+	
+
+/Users/fjulien/theos/makefiles/targets/%.mk:
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 52):
+	
+
+/Users/fjulien/theos/makefiles/targets/%/%.mk:
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 53):
+	
+
+# 15 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+before-package:: packages
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+before-package:: /Users/fjulien/trollstorejitenabler/.theos/_/DEBIAN/control
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+clean-packages:: before-clean-packages internal-clean-packages after-clean-packages
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+after-uninstall:: internal-after-uninstall
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+after-clean-packages::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+all::
+#  Phony target (prerequisite of .PHONY).
+#  Command-line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+
+all::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := all
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+#  commands to execute (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 14):
+	@$(PRINT_FORMAT) "Build may be slow as Theos isn’t using all available CPU cores on this computer. Consider upgrading GNU Make: https://theos.dev/docs/parallel-building"
+	
+
+all:: /Users/fjulien/trollstorejitenabler/.theos/build_session before-all internal-all after-all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+/Users/fjulien/theos/makefiles/package.mk:
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `package'
+#  Last modified 2022-06-04 18:02:16
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 47):
+	
+
+do:: all package install
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+internal-after-uninstall::
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/package.mk', line 138):
+	@:
+	
+
+.PHONY: stage before-stage internal-stage after-stage package internal-package-check before-package internal-package after-package all before-all internal-all after-all clean before-clean internal-clean after-clean clean-packages before-clean-packages internal-clean-packages after-clean-packages update-theos
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+update-theos::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 170):
+	@$(PRINT_FORMAT_MAKING) "Updating Theos"
+	$(ECHO_NOTHING)$(THEOS_BIN_PATH)/update-theos$(ECHO_END)
+	
+
+troubleshoot::
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 174):
+	@$(PRINT_FORMAT) "Be sure to check the troubleshooting page at https://theos.dev/docs/troubleshooting first."
+	@$(PRINT_FORMAT) "For support with build errors, ask on Discord: https://theos.dev/discord. If you think you've found a bug in Theos, check the issue tracker at https://github.com/theos/theos/issues."
+	@echo
+	$(ERROR_BEGIN) "You don't have the GitHub CLI installed. For more information, refer to https://cli.github.com." $(ERROR_END)
+	
+
+internal-all::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+internal-all:: TrollStoreJitEnabler.all.library.variables
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/master/library.mk', line 7):
+	
+
+internal-clean::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+ 
+#  commands to execute (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 70):
+	$(ECHO_CLEANING)rm -rf "$(subst $(_THEOS_OBJ_DIR_EXTENSION),,$(THEOS_OBJ_DIR))"$(ECHO_END)
+	$(ECHO_NOTHING)rm "$(_THEOS_BUILD_SESSION_FILE)"$(ECHO_END)
+	$(ECHO_NOTHING)touch "$(_THEOS_BUILD_SESSION_FILE)"$(ECHO_END)
+	$(ECHO_NOTHING)rm -rf "$(THEOS_STAGING_DIR)"$(ECHO_END)
+	
+
+after-install:: internal-after-install
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PRECIOUS: %.variables %.subprojects
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/Users/fjulien/trollstorejitenabler/.theos/_/DEBIAN:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/package/deb.mk', line 30):
+	$(ECHO_NOTHING)mkdir -p "$(THEOS_STAGING_DIR)/DEBIAN"$(ECHO_END)
+	
+
+before-stage::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/stage.mk', line 17):
+	$(ECHO_NOTHING)rm -rf "$(THEOS_STAGING_DIR)"$(ECHO_END)
+	$(ECHO_NOTHING)$(FAKEROOT) -c$(ECHO_END)
+	$(ECHO_NOTHING)mkdir -p "$(THEOS_STAGING_DIR)"$(ECHO_END)
+	
+
+internal-after-install::
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/package.mk', line 122):
+	@:
+	
+
+/Users/fjulien/theos/makefiles/master/rules.mk:
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `master/rules'
+#  Last modified 2022-06-04 18:02:16
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 47):
+	
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/Users/fjulien/theos/makefiles/stage.mk:
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `stage'
+#  Last modified 2022-06-04 18:02:16
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 47):
+	
+
+uninstall:: before-uninstall internal-uninstall after-uninstall
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Makefile:
+#  Implicit rule search has not been done.
+#  Last modified 2022-10-26 03:12:55
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 45):
+	
+
+.NOTPARALLEL:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/Users/fjulien/theos/makefiles/targets/_common/darwin_head.mk:
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `targets/_common/darwin_head'
+#  Last modified 2022-06-04 18:02:16
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 47):
+	
+
+# Not a target:
+%.variables:
+#  Precious file (prerequisite of .PRECIOUS).
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+after-package::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+# makefile (from `/Users/fjulien/theos/makefiles/package/deb.mk', line 62)
+# __THEOS_LAST_PACKAGE_FILENAME = $(_THEOS_DEB_PACKAGE_FILENAME)
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/1=0%
+#  commands to execute (from `/Users/fjulien/theos/makefiles/package.mk', line 18):
+	@echo "$(__THEOS_LAST_PACKAGE_FILENAME)" > "$(_THEOS_LOCAL_DATA_DIR)/last_package"
+	
+
+internal-clean-packages::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 98):
+	$(ECHO_NOTHING)rm -rf $(THEOS_PACKAGE_DIR)/$(THEOS_PACKAGE_NAME)_*-*_$(THEOS_PACKAGE_ARCH).deb$(ECHO_END)
+	$(ECHO_NOTHING)rm -rf $(THEOS_PACKAGE_DIR)/$(THEOS_PACKAGE_NAME)-*-*.$(THEOS_PACKAGE_ARCH).rpm$(ECHO_END)
+	
+
+/Users/fjulien/theos/makefiles/package/deb.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `package/deb'
+#  Last modified 2022-06-04 18:02:16
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 47):
+	
+
+/Users/fjulien/trollstorejitenabler/.theos/obj:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 37):
+	@mkdir -p $@
+	
+
+before-clean::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+packages:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 57):
+ 
+	@cd $(THEOS_BUILD_DIR); mkdir -p $(THEOS_PACKAGE_DIR_NAME)
+	
+
+internal-install::
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/package.mk', line 94):
+	@$(PRINT_FORMAT_ERROR) "$(MAKE) install requires that you set THEOS_DEVICE_IP in your environment." >&2
+	@$(PRINT_FORMAT) "It is also recommended that you have public-key authentication set up for root over SSH, or you will be entering your password a lot." >&2
+	@exit 1
+	
+
+internal-install::
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/package.mk', line 118):
+	@:
+	
+
+internal-install:: internal-install-check
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/install/deb_remote.mk', line 2):
+	$(ECHO_INSTALLING)install.exec "cat > /tmp/_theos_install.deb; $(_THEOS_SUDO_COMMAND) dpkg -i /tmp/_theos_install.deb && rm /tmp/_theos_install.deb" < "$(_THEOS_PACKAGE_LAST_FILENAME)"$(ECHO_END)
+	
+
+/Users/fjulien/theos/makefiles/rules.mk:
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `rules'
+#  Last modified 2022-06-04 18:02:16
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 47):
+	
+
+/Users/fjulien/theos/makefiles/install/deb_remote.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `install/deb_remote'
+#  Last modified 2022-06-04 18:02:16
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 47):
+	
+
+stage:: all before-stage internal-stage after-stage
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+after-stage::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/stage.mk', line 29):
+	@:
+	
+
+/Users/fjulien/theos/makefiles/vercmp.mk:
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `vercmp'
+#  Last modified 2022-06-04 18:02:16
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 47):
+	
+
+# Not a target:
+TrollStoreJitEnabler.stage.library.variables:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+before-all::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+internal-uninstall::
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/package.mk', line 134):
+	@:
+	
+
+internal-uninstall::
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/install/deb_remote.mk', line 5):
+	$(ECHO_NOTHING)install.exec "$(_THEOS_SUDO_COMMAND) dpkg -r \"$(THEOS_PACKAGE_NAME)\""$(ECHO_END)
+	
+
+internal-install-check::
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/package.mk', line 79):
+	@if [[ -z "$(_THEOS_PACKAGE_LAST_FILENAME)" ]]; then \
+	$(PRINT_FORMAT_ERROR) "$(MAKE) install and show require that you build a package before you try to install it." >&2; exit 1; \
+	fi
+	@if [[ ! -f "$(_THEOS_PACKAGE_LAST_FILENAME)" ]]; then \
+	$(PRINT_FORMAT_ERROR) "Could not find “$(_THEOS_PACKAGE_LAST_FILENAME)” to install. Aborting." >&2; exit 1; \
+	fi
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/Users/fjulien/theos/makefiles/targets/_common/iphone.mk:
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `targets/_common/iphone'
+#  Last modified 2022-06-04 18:02:16
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 47):
+	
+
+# Not a target:
+%.subprojects:
+#  Precious file (prerequisite of .PRECIOUS).
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+internal-package::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/package.mk', line 11):
+	$(ECHO_NOTHING)find $(THEOS_STAGING_DIR) \( -name \*.plist -or -name \*.strings \) -exec plutil -convert binary1 {} \;$(ECHO_END)
+	
+
+internal-package::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/package/deb.mk', line 59):
+	$(ECHO_NOTHING)COPYFILE_DISABLE=1 $(FAKEROOT) -r $(_THEOS_PLATFORM_DPKG_DEB) -Z$(_THEOS_PLATFORM_DPKG_DEB_COMPRESSION) -z$(THEOS_PLATFORM_DEB_COMPRESSION_LEVEL) -b "$(THEOS_STAGING_DIR)" "$(_THEOS_DEB_PACKAGE_FILENAME)"$(ECHO_END)
+	
+
+package:: internal-package-check stage before-package internal-package after-package
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+clean:: before-clean internal-clean after-clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+after-clean::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+/Users/fjulien/theos/makefiles/master/library.mk:
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `master/library'
+#  Last modified 2022-06-04 18:02:16
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 47):
+	
+
+show:: internal-install-check
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/package.mk', line 155):
+	$(ECHO_NOTHING)$(_THEOS_PLATFORM_SHOW_IN_FILE_MANAGER) "$(shell cat "$(_THEOS_LOCAL_DATA_DIR)/last_package")"$(ECHO_END)
+	
+
+/Users/fjulien/trollstorejitenabler/.theos/_/DEBIAN/control: /Users/fjulien/trollstorejitenabler/.theos/_/DEBIAN
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/package/deb.mk', line 50):
+	$(ECHO_NOTHING)sed -e 's/\$${LIBSWIFT}/$(_THEOS_DEB_LIBSWIFT_DEPENDS)/g; s/\$${LIBSWIFT_VERSION}/$(_THEOS_DEB_LIBSWIFT_PACKAGE_VERSION)/g; /^[Vv]ersion:/d; /^$$/d; $$a\' "$(_THEOS_DEB_PACKAGE_CONTROL_PATH)" > "$@"$(ECHO_END)
+	$(ECHO_NOTHING)echo "Version: $(_THEOS_INTERNAL_PACKAGE_VERSION)" >> "$@"$(ECHO_END)
+	$(ECHO_NOTHING)echo "Installed-Size: $(shell du $(_THEOS_PLATFORM_DU_EXCLUDE) DEBIAN -ks "$(THEOS_STAGING_DIR)" | cut -f 1)" >> "$@"$(ECHO_END)
+	
+
+before-uninstall::
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+before-clean-packages::
+#  Phony target (prerequisite of .PHONY).
+ 
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+internal-stage::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/stage.mk', line 26):
+	$(ECHO_NOTHING)[ -d $(THEOS_LAYOUT_DIR_NAME) ] && rsync -a "$(THEOS_LAYOUT_DIR_NAME)/" "$(THEOS_STAGING_DIR)" --exclude "DEBIAN" $(_THEOS_RSYNC_EXCLUDE_COMMANDLINE) || true$(ECHO_END)
+	
+
+internal-stage:: TrollStoreJitEnabler.stage.library.variables
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/master/library.mk', line 9):
+	
+
+internal-package-check::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/package.mk', line 14):
+	@:
+	
+
+/Users/fjulien/theos/makefiles/targets/_common/darwin_tail.mk:
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `targets/_common/darwin_tail'
+#  Last modified 2022-06-04 18:02:16
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 47):
+	
+
+before-install::
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/package.mk', line 112):
+	@:
+	
+
+/Users/fjulien/theos/makefiles/targets/Darwin/iphone.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `targets/Darwin/iphone'
+#  Last modified 2022-06-04 18:02:16
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 47):
+	
+
+/Users/fjulien/trollstorejitenabler/.theos/obj/.stamp: /Users/fjulien/trollstorejitenabler/.theos/obj
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 40):
+	@mkdir -p $(dir $@); touch $@
+	
+
+/Users/fjulien/theos/makefiles/targets/iphone.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `targets/iphone'
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 47):
+	
+
+after-all::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+/Users/fjulien/trollstorejitenabler/.theos/build_session:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/master/rules.mk', line 104):
+	@mkdir -p $(_THEOS_LOCAL_DATA_DIR)
+	
+
+/Users/fjulien/theos/makefiles/common.mk:
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `common'
+#  Last modified 2022-06-04 18:02:16
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 47):
+	
+
+/Users/fjulien/theos/makefiles/target.mk:
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `target'
+#  Last modified 2022-06-04 18:02:16
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 47):
+	
+
+# Not a target:
+TrollStoreJitEnabler.all.library.variables:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/Users/fjulien/theos/makefiles/library.mk:
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `library'
+#  Last modified 2022-06-04 18:02:16
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 47):
+	
+
+TrollStoreJitEnabler:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `/Users/fjulien/theos/makefiles/master/library.mk', line 17):
+	$(ECHO_MAKE)$(MAKE) -f $(_THEOS_PROJECT_MAKEFILE_NAME) $(_THEOS_MAKEFLAGS) $@.all.library.variables
+	
+
+/Users/fjulien/theos/makefiles/messages.mk:
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `messages'
+#  Last modified 2022-06-04 18:02:16
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 47):
+	
+
+/Users/fjulien/theos/makefiles/platform/Darwin.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `platform/Darwin'
+#  Last modified 2022-06-04 18:02:16
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 47):
+	
+
+install:: before-install internal-install after-install
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/Users/fjulien/theos/makefiles/legacy.mk:
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `legacy'
+#  Last modified 2022-06-04 18:02:16
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `/Users/fjulien/theos/makefiles/rules.mk', line 47):
+	
+
+# files hash-table stats:
+# Load=72/1024=7%, Rehash=0, Collisions=12/246=5%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 20
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 3185 / max = 3185 / min = 3185 / avg = 3185
+
+# Finished Make data base on Wed Oct 26 03:34:27 2022
+
+ 

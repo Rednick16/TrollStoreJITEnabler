@@ -1,0 +1,9 @@
+Package: com.rednick16.trollstorejitenabler
+Name: TrollStoreJitEnabler
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome library of some sort!!
+Maintainer: Red16
+Author: Red16
+Section: System
+Tag: role::developer
