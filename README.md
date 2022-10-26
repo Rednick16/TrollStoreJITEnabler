@@ -20,7 +20,6 @@ ProvaLauncher also used this entitlement with one of the above
 <key>com.apple.private.security.storage.AppDataContainers</key>
 <true/>
 ```
-iv injected this Tweak into UTM App you can check apps folder there is probably somthing wrong with the app it was kinda laggy
 
 # Based on
 https://github.com/PojavLauncherTeam/PojavLauncher_iOS/commit/ccaa9416f182dad0bc26832cbec85b799ae47dad#diff-0b345163bfb92b086397dec9b5f5f475cb6610283e8fb5c722763e6fb3d39db0
