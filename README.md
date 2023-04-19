@@ -1,6 +1,6 @@
 # TrollStoreJitEnabler
 
-you can use sideloadly to inject this tweak into your app which supports Jit.
+You can use Sideloadly to inject this tweak into your app which supports JIT.
 
 # Unsandboxing
 ```
@@ -15,9 +15,11 @@ you can use sideloadly to inject this tweak into your app which supports Jit.
 <key>com.apple.private.security.no-sandbox</key>
 <true/>
 ```
-ProvaLauncher also used this entitlement with one of the above
+PojavLauncher also used this entitlement with one of the above
 ```
 <key>com.apple.private.security.storage.AppDataContainers</key>
+<true/>
+<key>com.apple.private.security.storage.MobileDocuments</key>
 <true/>
 ```
 
