@@ -10,7 +10,7 @@ include $(THEOS)/makefiles/common.mk
 EXTERNAL_FILES = $(wildcard fishhook/*.c)
 INTERNAL_FILES = $(wildcard *.m)
 
-LIBRARY_NAME = TrollStoreJitEnabler
+LIBRARY_NAME = TrollStoreJITEnabler
 
 TrollStoreJitEnabler_FILES = $(INTERNAL_FILES) $(EXTERNAL_FILES)
 TrollStoreJitEnabler_CFLAGS = -fobjc-arc -fvisibility=hidden
