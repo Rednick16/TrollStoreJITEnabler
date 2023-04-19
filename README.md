@@ -4,21 +4,23 @@ You can use Sideloadly to inject this tweak into your app which supports JIT.
 
 # Unsandboxing
 ```
-<key>com.apple.private.security.container-required</key>
-<false/>
+<key>com.apple.developer.kernel.extended-virtual-addressing</key>
+<true/>
 ```
 ```
-<key>com.apple.private.security.no-container</key>
+<key>com.apple.developer.kernel.increased-memory-limit</key>
 <true/>
 ```
 ```
 <key>com.apple.private.security.no-sandbox</key>
 <true/>
 ```
-PojavLauncher also used this entitlement with one of the above
+PojavLauncher also used these entitlements with the ones above:
 ```
 <key>com.apple.private.security.storage.AppDataContainers</key>
 <true/>
+```
+```
 <key>com.apple.private.security.storage.MobileDocuments</key>
 <true/>
 ```
