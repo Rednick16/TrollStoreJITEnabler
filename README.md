@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # TrollStoreJITEnabler
 
 You can use sideloadly to inject this tweak into your app which supports JIT.
