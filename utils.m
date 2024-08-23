@@ -1,10 +1,9 @@
 #import "utils.h"
-#import "fishhook/fishhook.h"
 
 typedef struct __SecTask * SecTaskRef;
 extern CFTypeRef SecTaskCopyValueForEntitlement(
         SecTaskRef task, 
-        NSString* entitlement, 
+        CFStringRef entitlement, 
         CFErrorRef  _Nullable *error
     ) 
     __attribute__((weak_import));
@@ -12,44 +11,55 @@ extern CFTypeRef SecTaskCopyValueForEntitlement(
 extern SecTaskRef SecTaskCreateFromSelf(CFAllocatorRef allocator)
     __attribute__((weak_import));
 
-BOOL getEntitlementValue(NSString *key) 
+int getEntitlementIntValue(CFStringRef key) 
 {
     if (SecTaskCreateFromSelf == NULL || SecTaskCopyValueForEntitlement == NULL)
-        return NO;
+        return -1;
+
     SecTaskRef sec_task = SecTaskCreateFromSelf(NULL);
-    if(!sec_task) return NO;
-    CFTypeRef value = SecTaskCopyValueForEntitlement(sec_task, key, nil);
-    if (value != nil) 
-    {
-        CFRelease(value);
-    }
-    CFRelease(sec_task);
-    return value != nil && [(__bridge id)value boolValue];
+    if(sec_task == NULL) 
+        return -2;
+
+    CFTypeRef entitlementValue = SecTaskCopyValueForEntitlement(sec_task, key, NULL);
+    CFRelease(sec_task); // release SecTask ref
+
+    if(entitlementValue == NULL)
+        return -3;
+
+    int ret = -4;
+    if(CFGetTypeID(entitlementValue) == CFBooleanGetTypeID())
+        ret = CFBooleanGetValue((CFBooleanRef)entitlementValue);
+    CFRelease(entitlementValue);
+
+    return ret;
 }
 
-BOOL isJITEnabled() 
+BOOL isJITEnabled(BOOL useCSOPS) 
 {
-    if (getEntitlementValue(@"dynamic-codesigning")) 
-    {
+    if(!useCSOPS && getEntitlementIntValue(CFSTR("dynamic-codesigning")) == 1)
         return YES;
-    }
+
     int flags;
     csops(getpid(), 0, &flags, sizeof(flags));
     return (flags & CS_DEBUGGED) != 0;
 }
 
-void ShowAlert(NSString* title, NSString* message)
+BOOL isAppSandboxed()
 {
-    DISPATCH_ASYNC_START
-        UIWindow* mainWindow = [[UIApplication sharedApplication] windows].lastObject;
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:title
-                                                                    message:message
-                                                                preferredStyle:UIAlertControllerStyleAlert];
-        [alert addAction:[UIAlertAction actionWithTitle:@"ok!"
-                                                style:UIAlertActionStyleDefault
-                                                handler:nil]];
-        [mainWindow.rootViewController presentViewController:alert
-                                                    animated:true
-                                                completion:nil];
-    DISPATCH_ASYNC_CLOSE
+    int noConatainer = getEntitlementIntValue(CFSTR("com.apple.private.security.no-container"));
+    int noSandbox = getEntitlementIntValue(CFSTR("com.apple.private.security.no-sandbox"));
+    int containerRequired = getEntitlementIntValue(CFSTR("com.apple.private.security.container-required"));
+    
+    // The app is sandboxed if:
+    // - "com.apple.private.security.no-container" is false
+    // - "com.apple.private.security.no-sandbox" is false
+    // - "com.apple.private.security.container-required" is true
+    // ref: https://github.com/opa334/TrollStore#unsandboxing
+    return ( noConatainer == 0 || noSandbox == 0 || containerRequired == 1 );
+}
+
+BOOL isTrollStoreEnvironment() 
+{
+    NSString *tsPath = [NSString stringWithFormat:@"%@/../_TrollStore", NSBundle.mainBundle.bundlePath];
+    return (access([tsPath fileSystemRepresentation], F_OK) == 0) ? YES : NO;
 }

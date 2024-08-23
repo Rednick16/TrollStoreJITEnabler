@@ -1,8 +1,8 @@
 Package: com.rednick16.trollstorejitenabler
-Name: TrollStoreJitEnabler
-Version: 0.0.1
+Name: TrollStoreJITEnabler
+Version: 1.1.0
 Architecture: iphoneos-arm
-Description: An awesome library of some sort!!
+Description: A library designed to enable Just-In-Time (JIT) compilation for apps installed through TrollStore.
 Maintainer: Red16
 Author: Red16
 Section: System
